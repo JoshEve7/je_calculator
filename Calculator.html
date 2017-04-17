@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JE_Calculator</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <style>
+        body {
+                background-color: gray;
+        }
+
+        .box {
+            border: 2px solid blue;
+            background-color: lightgray;
+            width: 7%;
+            float: left;
+            margin: .5vw;
+            height: 4vw;
+            text-align: center;
+            padding-top: 15px;
+            /*border-radius: 25px;*/
+            /*border: 2px solid;*/
+
+        }
+
+        #topbox1 {
+            border: 2px solid darkblue;
+            width: 10.5%;
+            margin-top: 2vw;
+            margin-bottom: 1vw;
+            height: 3vw;
+            margin-left: 9px;
+
+        }
+
+        #topbox2 {
+            border: 2px solid darkblue;
+            width: 10.5%;
+            margin-top: 2vw;
+            margin-bottom: 1vw;
+            height: 3vw;
+        }
+
+        #topbox3 {
+            border: 2px solid darkblue;
+            width: 10.5%;
+            margin-top: 2vw;
+            margin-bottom: 1vw;
+            height: 3vw;
+        }
+
+        #four {
+            clear: left;
+        }
+
+        #clear {
+            clear: left;
+        }
+
+        #seven {
+            clear: left;
+        }
+
+        #container {
+        margin-left: 500px;
+
+        }
+
+        h1 {
+            font-size: 4vw;
+            text-align: center;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+<h1>Javascript Calculator !</h1>
+
+<div id="container">
+    <div class="calcBorder">
+        <div>
+            <input name="topbox1" id="topbox1" type="text">
+            <input name="topbox2" id="topbox2" type="text">
+            <input name="topbox3" id="topbox3" type="text">
+        </div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">+</div>
+
+        <div id="four" class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">-</div>
+
+        <div id="seven" class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">*</div>
+
+        <div id="clear" class="box">C</div>
+        <div class="box">0</div>
+        <div class="box">=</div>
+        <div class="box">/</div>
+
+
+    </div>
+</div>
+
+
+
+<script>
+
+var btns = document.getElementsByClassName("box");
+for(var i = 0; i < btns.length; i++){
+   btns[i].addEventListener("click", function (e) {
+      document.getElementById("topbox1").value  = this.innerText;
+   })
+};
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+<script>src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"</script>
+
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
